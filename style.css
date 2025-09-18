@@ -32,6 +32,20 @@
     margin-top: 100px;
 } */
 @media  screen and (min-width:778px) {
+          .cnt {
+  background: linear-gradient(135deg, #f8f8f8 0%, #000000 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(50, 50, 93, 0.12);
+  padding: 28px 24px;
+  margin: 24px 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+    
+    
 
 .yoga{
     display: flow;
@@ -94,8 +108,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 63px;
-    padding-left: 29px;
-    padding-right: 20px;
+    /* padding-left: 29px;
+    padding-right: 20px; */
     padding-bottom: 29px;
     justify-content: center;
     align-items: center;
@@ -294,6 +308,20 @@
 
 
 @media  screen and (max-width:778px) {
+
+  .cnt {
+    width: 78vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    border: 2px solid white;
+    gap: 16px;
+    border-radius: 11%;
+    box-shadow: 14px 11px 12px #888888;
+}
+
     .navbar{
             position: fixed;
     top: 0;
@@ -670,7 +698,7 @@ body::before {
 }
 .project-heading
 {
-    padding: 34px;
+    /* padding: 34px; */
     text-align: center;
     color: white;
 }
@@ -801,6 +829,18 @@ body::before {
 /* ...existing code... */
 
 @media (max-width: 700px) {
+    .cnt {
+    width: 78vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    border: 2px solid white;
+    gap: 16px;
+    border-radius: 11%;
+    box-shadow: 14px 11px 12px #888888;
+}
     .skill-box {
     background: linear-gradient(135deg, #d7d7d7 0%, #000000 100%);
     color: #fff;
