@@ -1,0 +1,66 @@
+.skill-box {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: opacity 0.6s cubic-bezier(.4,0,.2,1), transform 0.6s cubic-bezier(.4,0,.2,1);
+}
+
+/* When active: visible and popped up */
+.skill-box.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Initial hidden state for skill containers */
+.skill-container {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: opacity 0.6s cubic-bezier(.4,0,.2,1), transform 0.6s cubic-bezier(.4,0,.2,1);
+}
+
+/* Pop-up when active */
+.skill-container.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Pop-up animation keyframes */
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Apply animation on page load */
+.skill-box,
+.cnt {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  animation: popUp 0.7s cubic-bezier(.4,0,.2,1) forwards;
+}
+
+/* Optional: stagger effect for multiple boxes */
+.skill-box:nth-child(1),
+.cnt:nth-child(1) { animation-delay: 0.1s; }
+.skill-box:nth-child(2),
+.cnt:nth-child(2) { animation-delay: 0.2s; }
+.skill-box:nth-child(3),
+.cnt:nth-child(3) { animation-delay: 0.3s; }
+/* Add more as needed */
+
+
+.project-item {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95);
+  transition: opacity 0.6s cubic-bezier(.4,0,.2,1), transform 0.6s cubic-bezier(.4,0,.2,1);
+}
+
+/* Pop-up when active */
+.project-item.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="skill_style.css">
+</head>
+<body>
+      <div class="navbar navbargo">
+    <nav>
+      <div class="nav-header">
+       
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+          <span class="bar"><img class="ham" src="img-1/hamburger/hamunique.png" alt="" width="23"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+       <div class="mode1">
+          <span class="moon mode">Dark<img src="img-1/moon.svg" alt=""></span>
+          <span class="sun mode">Light<img src="img-1/sun.svg" alt=""></span>
+        </div>
+    </nav>
+  </div>
+  <div class="certi-main">
+
+  </div>
+    <!-- <div>hello world</div> -->
+    <iframe id="pdfViewer" src="img-1/certificates/candc++.pdf" width="100%" height="500px"></iframe>
+
+
+<script>
+  const urlParams = new URLSearchParams(window.location.search);
+  const file = urlParams.get('file');
+  if (file) {
+    document.getElementById('pdfViewer').src = 'img-1/certificates/' + file;
+  }
+</script>
+</body>
+</html>

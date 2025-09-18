@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="good_style.css" />
+    <link rel="stylesheet" href="skill_style.css" />
+    <style>
+      /* Add this to skill_style.css */
+      .skill-box {
+        background: linear-gradient(135deg, #d7d7d7 0%, #000000 100%);
+        color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(30, 60, 114, 0.2);
+        padding: 24px 32px;
+        /* margin: 20px 0; */
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-family: "Segoe UI", Arial, sans-serif;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .skill-box:hover {
+        transform: translateY(-4px) scale(1.03);
+        box-shadow: 0 8px 24px rgba(30, 60, 114, 0.3);
+      }
+      .skill-box h4 {
+        font-size: 1.5rem;
+        margin: 0;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar navbargo">
+      <nav>
+        <div class="nav-header">
+          <button
+            class="hamburger"
+            id="hamburger-btn"
+            aria-label="Toggle navigation"
+          >
+            <span class="bar"
+              ><img
+                class="ham"
+                src="img-1/hamburger/hamunique.png"
+                alt=""
+                width="23"
+            /></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mode1">
+          <span class="moon mode">Dark<img src="img-1/moon.svg" alt="" /></span>
+          <span class="sun mode">Light<img src="img-1/sun.svg" alt="" /></span>
+        </div>
+      </nav>
+    </div>
+    <div id="skills-1">
+      <div class="skills">
+        <h2>Skills</h2>
+
+        <div class="skill-container">
+          <div class="skill-box skills-item left">
+            <div class="skill-logo">
+              <div class="c"><img src="img-1/c-logo/C_Logo.webp" alt="" /></div>
+
+              <div>
+                <h4>C & C++ language</h4>
+              </div>
+            </div>
+            <div>
+              <button
+                class="certificate"
+                onclick="viewCertificate('candc++.pdf')"
+              >
+                View C & C++ Certificate
+              </button>
+            </div>
+          </div>
+          <div class="skill-content">
+            <div>
+              I have a good understanding of C and C++ programming. I learned it
+              during my graduation at <b>Mukand Lal National</b>
+              College and also through an online course from Unschool Academy.
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <div class="skill-content">
+            <div>
+              I have learned HTML, CSS, and JavaScript as part of my studies at
+              <b>Mukand Lal National College</b> and
+              <b>Maharishi Markandeshwar Deemed to be University</b>. These
+              skills help me in creating responsive and interactive websites.
+            </div>
+          </div>
+          <div class="skill-box skills-item right">
+            <div class="html">
+              <img
+                src="img-1/html-logo/html-icon.webp"
+                class="html-logo"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>HTML, CSS and JS</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <div class="skill-box skills-item left">
+            <div class="skill-logo">
+              <div class="c"><img src="img-1/react/react.webp" alt="" /></div>
+
+              <div>
+                <h4>React</h4>
+              </div>
+            </div>
+            <div>
+              <button
+                class="certificate"
+                onclick="viewCertificate('react.pdf')"
+              >
+                View Java Certificate
+              </button>
+            </div>
+          </div>
+          <div class="skill-content">
+            <div>
+              I have a good understanding of React. I learned it during my
+              graduation at <b>Mukand Lal National College</b> and also through
+              an online course from <b>" Namaste.dev "</b>.
+            </div>
+          </div>
+        </div>
+
+
+         <div class="skill-container">
+          <div class="skill-content">
+            <div>
+              I have learned HTML, CSS, and JavaScript as part of my studies at
+              <b>Mukand Lal National College</b> and
+              <b>Maharishi Markandeshwar Deemed to be University</b>. These
+              skills help me in creating responsive and interactive websites.
+            </div>
+          </div>
+          <div class="skill-box skills-item right">
+            <div class="html">
+              <img
+                src="img-1/sql and mongodb/sqlandmongodb.png"
+                class="html-logo"
+                alt=""
+              />
+            </div>
+            <div>
+              <h4>SQL and MongoDB</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function viewCertificate(fileName) {
+        window.location.href =
+          "skill-certificates.html?file=" + encodeURIComponent(fileName);
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

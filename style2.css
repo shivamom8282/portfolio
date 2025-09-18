@@ -1,0 +1,75 @@
+.light .main
+{
+    background-image: url("img-1/bg/bg-2.jpg");
+    
+}
+.light h1,.light h2,.light h3,.light h4,.light h5,.light h6,.light a,.light li,.light span,span h1,.light div,.light #skills-1 h2,.light #hobbies span h1,.ct1
+{
+    color: black;
+}
+.light 
+{
+    background-color: rgb(224, 224, 224);
+        background: linear-gradient(135deg, rgba(255, 254, 254, 0.9), rgba(83, 82, 82, 0.4) /* lighter mixture shade */);
+   
+   
+    border: -9px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2), 0 4px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow-x: hidden;
+    color: #fff;
+}
+/* .light .content span
+{
+    color: black;
+}
+.light .skills-item
+{
+    color: black;
+}
+.light .project-item
+{
+    color:black
+}
+.light .yoga-content ul li,.light .chess-content ul li
+{
+    color: black;
+}
+.light .contact-1 .gap a
+{
+    color: black;
+} */
+.light .contact-1 .gap a
+{
+    color: black;
+} 
+.mode
+{
+    padding-right: 38px;
+    cursor: pointer;
+}
+.sun
+{
+    display: none;
+}
+.moon:hover,.sun:hover{
+    text-decoration: underline;
+}
+.moon img:hover
+{
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+}
+.sun img:hover
+{
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
+
+.ct1
+{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    color: white;
+}
